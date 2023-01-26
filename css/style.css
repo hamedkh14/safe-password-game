@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+main {
+  background-image: url(../img/Stray3-1.webp);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+#container {
+  gap: 5px;
+  width: 250px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#container .board {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  margin-bottom: 50px;
+  flex-direction: row-reverse;
+  border-radius: 4px;
+  color: #212121;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#container #inputs {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  position: relative;
+}
+
+#container  #inputs input[type=number] {
+  width: 25%;
+  border: 0;
+  text-align: center;
+  font-size: 30px;
+  color: #121212;
+  caret-color: transparent;
+}
+#container  #inputs input[type=number]::selection {
+  background-color: inherit;
+  color: inherit;
+}
+#container  #inputs input[type=number].inp1 {
+  background-color: #ffc4bf;
+}
+#container  #inputs input[type=number].inp2 {
+  background-color: #fff49b;
+}
+#container  #inputs input[type=number].inp3 {
+  background-color: #06b8a6;
+}
+
+#container #btnNumbers {
+  display: grid;
+  padding: 5px;
+  gap: 5px;
+  grid-template-columns: repeat(3, 31.7%);
+  grid-template-rows: repeat(3, 40px);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+#container #btnNumbers button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+#container #btnNumbers button:hover {
+  background: #fff;
+  color: #121212;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+#container #result button {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background-color: #f0bc8c;
+  color: #212121;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: none;
+}
+
+#container #result button:hover {
+  background-color: #fad0a9;
+}
